@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="dotnet_maui_bug_repro_ios_tabs_shell.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:dotnet_maui_bug_repro_ios_tabs_shell"
+    Shell.FlyoutBehavior="Disabled">
+
+  <TabBar>
+    <Tab
+      Title="Home">
+      <Tab.Icon>
+        <FontImageSource
+          FontFamily="materialdesignicons"
+          Glyph="{StaticResource HomeIcon}"/>
+      </Tab.Icon>
+      <ShellContent
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"/>
+    </Tab>
+    <Tab
+      Title="Settings">
+      <Tab.Icon>
+        <FontImageSource
+          FontFamily="materialdesignicons"
+          Glyph="{StaticResource SettingsIcon}"/>
+      </Tab.Icon>
+      <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate local:SettingsPage}"
+        Route="SettingsPage"/>
+    </Tab>
+  </TabBar>
+
+</Shell>
