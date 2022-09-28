@@ -3,8 +3,9 @@
 Tab Icons do not show up on iOS when using FontIconSource with an icon font
 
 **Screenshot**
-
-
+<div>
+<img align="top" src="missing_tab_icons.PNG" width="400"/>
+</div>
 
 **MauiProgram.cs**
 ```c#
